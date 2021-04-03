@@ -1,4 +1,4 @@
-package com.example.demo.Entry;
+package com.example.demo.Entity;
 
 import lombok.*;
 
@@ -30,4 +30,15 @@ public class User {
     @NotNull(message = "用户邮箱不能为空")
     @Email(message = "邮箱格式不正确")
     private String email;
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ",account='" + account + '\'' +
+                ",password='" + password + '\'' +
+                ",email='" + email + '\'' +
+                '}';
+    }
 }

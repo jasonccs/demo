@@ -1,4 +1,4 @@
-package com.example.demo.Entry;
+package com.example.demo.Entity;
 
 import com.example.demo.Result.Result;
 import com.example.demo.Result.ResultCode;

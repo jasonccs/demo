@@ -3,6 +3,7 @@ package com.example.demo.Exception;
 import com.example.demo.Result.Result;
 import com.example.demo.Result.ResultCode;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.binding.BindingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -81,6 +82,16 @@ public class GlobalException {
     @ExceptionHandler(value = {HttpMessageNotReadableException.class})
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Result<Object> HttpMessageNotReadableException(Model model, Exception e) {
+
+//        model.addAttribute("msg", "@ControllerAdvice + @ExceptionHandler :" + e.getMessage());
+        log.info(e.getMessage());
+        return  new Result<>(ResultCode.UNSUPPORTED_MEDIA_TYPE, e.getMessage());
+    }
+
+
+    @ExceptionHandler(value = {BindingException.class})
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public Result<Object> BindingException(Model model, Exception e) {
 
 //        model.addAttribute("msg", "@ControllerAdvice + @ExceptionHandler :" + e.getMessage());
         log.info(e.getMessage());

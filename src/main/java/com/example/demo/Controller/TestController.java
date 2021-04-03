@@ -1,6 +1,6 @@
 package com.example.demo.Controller;
 
-import com.example.demo.Entry.User;
+import com.example.demo.Entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,10 +26,11 @@ public class TestController {
     }
 
     @PostMapping("/addUser")
-    public void addUser(@Valid @RequestBody User user) {
-        user.setAccount("2");
-        user.setAccount("12345678");
-        user.setPassword("12345678");
-        user.setEmail("123@qq.com");
+    public User addUser(@Valid @RequestBody User user) {
+        user.setId(user.getId());
+        user.setAccount(user.getAccount());
+        user.setPassword(user.getPassword());
+        user.setEmail(user.getEmail());
+        return user;
     }
 }
