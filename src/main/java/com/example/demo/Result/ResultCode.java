@@ -4,7 +4,8 @@ package com.example.demo.Result;
 import lombok.Getter;
 
 /**
- * @author suruomo * @date 2020/8/7 16:10
+ * @author jasonccs
+ * @date 2021/04/03 10:10
  * @description: 响应码枚举
  */
 

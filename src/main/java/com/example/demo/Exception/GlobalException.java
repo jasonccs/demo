@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * @Description 全局异常处理类
- * @author 欧阳
+ * @author jasonccs
  * @since 2019年4月12日 下午3:52:04
  * @version V1.0
  */

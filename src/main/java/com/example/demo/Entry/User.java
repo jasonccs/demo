@@ -7,8 +7,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * @author suruomo
- * @date 2020/8/7 15:41
+ * @author jassonccs
+ * @date 2021/04/03 10:10
  * @description: 实体类
  */
 @Getter

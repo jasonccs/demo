@@ -13,8 +13,8 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 /**
- * @author suruomo
- * @date 2020/8/7 16:38
+ * @author jasonccs
+ * @date 2021/04/03 10:10
  * @description: 全局处理增强版Controller，避免Controller里返回数据每次都要用响应体来包装
  */
 @RestControllerAdvice(basePackages = {"com.example.demo.Controller"}) // 注意哦，这里要加上需要扫描的包
