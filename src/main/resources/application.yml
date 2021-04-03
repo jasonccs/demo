@@ -23,8 +23,9 @@ spring:
     user:
       name: root
       password: root
+  jpa:
+    open-in-view: false #操作数据库的连接文件
 
-#操作数据库的连接文件
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.demo.Entity
