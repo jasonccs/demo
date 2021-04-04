@@ -25,6 +25,13 @@ spring:
       password: root
   jpa:
     open-in-view: false #操作数据库的连接文件
+  # 自定义404 出现错误时, 直接抛出异常
+  mvc:
+    throw-exception-if-no-handler-found: true
+  #不要为我们工程中的资源文件建立映射
+  web:
+    resources:
+      add-mappings: false
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

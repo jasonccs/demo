@@ -18,5 +18,8 @@ public class UserServiceImpl implements UserService {
         return userMapper.Sel(id);
     }
 
+    public User Del(int id) {
+        return userMapper.Del(id);
+    }
 
 }

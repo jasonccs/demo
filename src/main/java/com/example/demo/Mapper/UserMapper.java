@@ -10,4 +10,5 @@ public interface UserMapper {
 
     User Sel(int id);
 
+    User Del(int id);
 }

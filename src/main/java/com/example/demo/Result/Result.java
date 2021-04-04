@@ -2,8 +2,8 @@ package com.example.demo.Result;
 
 import lombok.*;
 /**
- * @author suruomo
- * @date 2020/8/7 15:36
+ * @author jasonccs
+ * @date 2021/04/02 15:36
  * @description: 自定义统一响应体
  * VO（ View Object）：显示层对象，通常是Web向模板渲染引擎层传输的对象。
  */

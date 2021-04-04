@@ -12,5 +12,5 @@ public interface UserService{
 
      User Sel(int id);
 
-
+     User Del(int id);
 }
